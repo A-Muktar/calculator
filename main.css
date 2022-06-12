@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(bg.jpg) ;
+    background-size: cover;
+   /* background: #303b57; */
+}
+
+
+
+.Calcultor {
+    position: relative;
+    display: grid;
+    
+}
+
+.Calcultor .value {
+   grid-column: span 4;
+   height: 120px;
+   width:100%;
+   text-align: right;
+   border: 3px solid goldenrod;
+   outline: none;
+   padding: 10px;
+   font-size: 50px;
+}
+
+.Calcultor span {
+    display: grid;
+    width: 162px;
+    height: 120px;
+    padding: 2px;
+    font-size: 48px;
+    color: #fff;
+    background-color: #042d5c;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, .1)
+}
+
+.Calcultor span:hover {
+    color:#b388aa;
+    background-color: #31242f
+}
+
+.Calcultor span:active {
+background: #74ff3b;
+color: #111;
+}
+
+.Calcultor span.clear {
+    grid-column: span 2;
+    width: 324px;
+    background:#641857
+}
+
+.Calcultor span.Plus {
+    grid-row: span 2;
+    height: 240px;
+}
+
+.Calcultor span.equal {
+  background: #03b1ff;
+}
