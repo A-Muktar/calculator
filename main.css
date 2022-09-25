@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100%;
     background-image: url(bg.jpg) ;
     background-size: cover;
    /* background: #303b57; */
@@ -25,7 +25,7 @@ body {
 
 .Calcultor .value {
    grid-column: span 4;
-   height: 120px;
+   height: 100px;
    width:100%;
    text-align: right;
    border: 3px solid goldenrod;
@@ -37,7 +37,7 @@ body {
 .Calcultor span {
     display: grid;
     width: 162px;
-    height: 120px;
+    height: 110px;
     padding: 2px;
     font-size: 48px;
     color: #fff;
@@ -64,9 +64,55 @@ color: #111;
 
 .Calcultor span.Plus {
     grid-row: span 2;
-    height: 240px;
+    height: 220px;
 }
 
 .Calcultor span.equal {
   background: #03b1ff;
+}
+
+@media only screen and (max-width: 500px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-image: url(bg.jpg) ;
+        background-size: cover;
+       /* background: #303b57; */
+    }
+
+    .Calcultor .value {
+        grid-column: span 4;
+        height: 100px;
+        width:100%;
+        text-align: right;
+        border: 3px solid goldenrod;
+        outline: none;
+        padding: 10px;
+        font-size: 50px;
+     }
+
+     
+.Calcultor span {
+    display: grid;
+    width: 125px;
+    height: 90px;
+    padding: 2px;
+    font-size: 40px;
+    color: #fff;
+    background-color: #042d5c;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, .1)
+}
+.Calcultor span.clear {
+    grid-column: span 2;
+    width: 250px;
+    background:#641857
+}
+
+.Calcultor span.Plus {
+    grid-row: span 2;
+    height: 180px;
+}
 }
